@@ -1,3 +1,8 @@
+.bg-gris {
+  background-color: rgb(245, 243, 244);
+  padding: 40px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +22,24 @@ li {
 a {
   text-decoration: none;
   color: black;
+}
+
+.boton-book {
+  padding: 12px 60px;
+  width: fit-content;
+  background-color: #d6e8e2;
+  border-radius: 20px;
+  font-size: 1.3rem;
+}
+
+.boton-carrusel {
+  margin-top: 30px;
+  margin-bottom: 250px;
+  padding: 12px 25px;
+  width: fit-content;
+  background-color: #d6e8e2;
+  border-radius: 20px;
+  font-size: 1rem;
 }
 
 header {
@@ -48,6 +71,11 @@ header h1 {
 header ul li {
   display: inline-block;
   margin-left: 25px;
+}
+
+.logo-nav {
+  width: 80px;
+  height: 80px;
 }
 
 footer {
@@ -146,24 +174,6 @@ footer {
     padding-top: 0px;
   }
 }
-.boton-book {
-  padding: 12px 60px;
-  width: fit-content;
-  background-color: #d6e8e2;
-  border-radius: 20px;
-  font-size: 1.3rem;
-}
-
-.boton-carrusel {
-  margin-top: 30px;
-  margin-bottom: 250px;
-  padding: 12px 25px;
-  width: fit-content;
-  background-color: #d6e8e2;
-  border-radius: 20px;
-  font-size: 1rem;
-}
-
 .carrusel-contenedor {
   padding-left: 0;
 }
@@ -331,11 +341,6 @@ footer {
 }
 
 /*--------index-bloque4--------*/
-.blq-4 {
-  background-color: rgb(245, 243, 244);
-  padding: 40px;
-}
-
 .blq-4-izq {
   font-size: 1.2rem;
 }
@@ -345,8 +350,172 @@ footer {
   padding: 20px;
 }
 
-h1 {
-  font-size: 15rem;
+/*--------Portada-geneo--------*/
+.contenedor1 {
+  display: flex;
+  text-align: center;
+}
+
+.banner-oxypods {
+  width: 100vw;
+  height: 35vh;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+}
+
+.banner-title {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: rgb(253, 255, 255);
+}
+
+.geneo-p {
+  padding-top: 60px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.geneo-p img {
+  width: 340px;
+  padding-top: 60px;
+}
+
+.blq-geneo {
+  padding: 20px 20px;
+}
+
+.bloque-geneo-1-img img {
+  background-size: cover;
+  height: 90%;
+}
+
+.bloque-geneo-1-img {
+  padding-top: 20px;
+  width: 40vw;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.bloque-geneo-1 {
+  text-align: left;
+  line-height: 3rem;
+}
+
+.bloque-geneo-1 span {
+  margin: 42px 14px 0;
+}
+
+.bloque-geneo-1 h3 {
+  margin: 8px auto 0 14px;
+}
+
+.bloque-geneo-1 p {
+  margin: 28px 28px 28px 28px;
+}
+
+.blq-2 {
+  background-color: rgb(245, 243, 244);
+}
+
+.img-bloque1 {
+  background-image: url(../img/prp-3.png);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+}
+
+.img-bloque2 {
+  background-image: url(../img/prp-4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+}
+
+.img-bloque3 {
+  background-image: url(../img/prp-5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 35vh;
+}
+
+.bg-golden {
+  background-color: rgb(232, 213, 173);
+}
+
+.img-line {
+  display: block;
+  margin: auto;
+  height: 25vh;
+  width: 100vw;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 25% 25%;
+  padding: 0 25px;
+}
+
+@media (min-width: 768px) {
+  .img-line {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height: 30vh;
+    max-width: 70%;
+    overflow: hidden;
+    object-position: 25% 25%;
+  }
+}
+@media (min-width: 1400px) {
+  .img-line {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    height: 30vh;
+    max-width: 70%;
+    overflow: hidden;
+    object-position: 25% 25%;
+  }
+}
+.banner-capilar {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../img/prp-capilar.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.img-fit {
+  overflow: hidden;
+  object-fit: cover;
+  place-content: center;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+
+.partners-logo {
+  align-content: stretch;
+  overflow: hidden;
+  object-fit: contain;
+  width: 100%;
+  height: 250px;
+}
+
+@media (min-width: 1200px) {
+  .partners-logo {
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    height: 150px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
